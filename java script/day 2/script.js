@@ -1,58 +1,67 @@
-console.log("Example of conditional statements");
-var a=40;
-console.log("Val of a ",a);
-if(a < 30){
-    console.log("a is > 30");
-}
-else{
-    console.log("a is < 30");
-}
-
-// the Assignment 1 in Day2  
-var a = 'BMI';
-console.log(a);
-console.log("The BMI program ")
-var h=1.72;
-var w=70;
-var bmi=w/(h*h);
-console.log("The BMI value is ",bmi);
-if(bmi < 18.5){
-    console.log("under weight");
-}else if(bmi >=18.5 && bmi <= 24.9){
-    console.log("Healthy weight");
-}else if(bmi >= 25 && bmi <= 29.9){
-    console.log("Over weight")
-}else{
-    console.log("Bmi Obesity");
-}
-// Switch statements 
-console.log("By using the switch statemnts");
-let weight = 70;   
-let height = 1.75;
-
-let bmi1 = weight / (height * height);
-let category = "";
-
-switch (true) {
-  case bmi < 18.5:
-    category = "Underweight";
-    break;
-
-  case bmi >= 18.5 && bmi < 25:
-    category = "Normal weight";
-    break;
-
-  case bmi >= 25 && bmi < 30:
-    category = "Overweight";
-    break;
-
-  case bmi >= 30:
-    category = "Obesity";
-    break;
-
-  default:
-    category = "Invalid BMI";
-}
-
-console.log("BMI:", bmi.toFixed(2), "-", category);
-
+var m= 'harsha';
+console.log(m);
+var a = 10;
+var b = '6';
+console.log(a, b);
+console.log(typeof a, typeof b);
+console.log(a + b);
+console.log(typeof (a + b));
+var c = Number(b);
+console.log(typeof c);
+//Arithmetic operators
+var x = 23;
+var y = 7;
+console.log(x + y);
+console.log(x - y);
+console.log(x * y);
+console.log(x ** y);
+console.log(y ** 2);
+console.log(x / y);
+console.log(x % y);
+//Assignment operators
+var num1 = 5;
+var num2 = 7;
+console.log(num1 += num2);
+console.log(num1 -= num2);
+console.log(num1 *= num2);
+console.log(num1 /= num2);
+console.log(num1 %= num2);
+console.log(num1 &= num2);
+console.log(num1 |= num2);
+//Unary operators 
+var s = 20;
+console.log(20);
+var b = +20;
+console.log(b);
+var c = -20;
+console.log(c);
+console.log(++a);
+console.log(--a);
+console.log(a++);
+console.log(a--);
+//comparsion operators
+var x = 23;
+var y = 7;
+console.log(x > y);
+console.log(x < y);
+console.log(x >= y);
+console.log(x <= y);
+console.log(x == y);
+console.log(x != y);
+console.log(x === y);
+console.log(x !== y);
+//logical operators
+console.log(!undefined);
+console.log(!null);
+console.log(!20);
+console.log(!0);
+console.log(!NaN);
+console.log(!{});
+console.log(!'');
+console.log(!'Text');
+console.log(!false);
+console.log(!true);
+var x = 34;
+var y = 45;
+console.log(x && y);
+console.log(x || y);

@@ -1,3 +1,5 @@
+var a="student result";
+console.log(a);
 var students=[
     {
         name: "abc",
@@ -31,7 +33,6 @@ while(x < students.length){
     students[x].totalMarks=sum;
     var avg = sum / students[x].marks.length;
     students[x].averageMarks = avg;
-
     // pass or fail (pass mark = 40)
     if (avg >= 40) {
         students[x].result = "Pass";
